@@ -25,9 +25,10 @@ console.log(divs)
 divs[3].addEventListener('click', onDivClick)
 
 function onDivClick(event) {
+  event.stopPropogation()
 console.log(this.firstChild.nodeValue.trim() + ' bubbled')
 }
 
-//for (let div of divs) {
-  //div.addEventListener('click', onDivClick)
-//}
+for (let div of divs) {
+  div.addEventListener('click', onDivClick)
+}
