@@ -22,7 +22,6 @@ input.addEventListener('keydown', onKeyDown)
 const divs = document.querySelectorAll('div')
 console.log(divs)
 
-divs[3].addEventListener('click', onDivClick)
 
 function onDivClick(event) {
   event.stopPropogation()
